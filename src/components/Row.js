@@ -3,9 +3,8 @@ import Square from './Square';
 
 export default class Row extends Component {
   render() {
-    const { className, location } = this.props;
-    
-    const squareClassName = `square ${location}`;
+    const { className } = this.props;
+    const squareClassName = `square ${className}-square`;
 
     return (
       <div className={className}>

@@ -59,10 +59,10 @@ export default class Matrix extends Component {
   render() {
     return (
       <div id="matrix-container">
-        <Row className="back-square" location="back" animate={this.animate} reset={this.reset} />
-        <Row className="mid-back-square" location="mid-back" animate={this.animate} reset={this.reset} />
-        <Row className="mid-front-square" location="mid-front" animate={this.animate} reset={this.reset} />
-        <Row className="front-square" location="front" animate={this.animate} reset={this.reset} />
+        <Row className="back" animate={this.animate} reset={this.reset} />
+        <Row className="mid-back" animate={this.animate} reset={this.reset} />
+        <Row className="mid-front" animate={this.animate} reset={this.reset} />
+        <Row className="front" animate={this.animate} reset={this.reset} />
       </div>
     )
   }

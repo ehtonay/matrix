@@ -42,21 +42,21 @@ body {
 }
 
 /* Rows */
-.back {
+.back-square {
   width: 100px;
   height: 100px;
 }
-.back-square {
+.back {
   margin: 0 auto;
   -webkit-perspective: 350px;
   perspective: 350px;
   text-align: center;
 }
-.mid-back {
+.mid-back-square {
   width: 126px;
   height: 126px;
 }
-.mid-back-square {
+.mid-back {
   margin: 0 auto;
   -webkit-perspective: 350px;
   perspective: 425px;
@@ -64,11 +64,11 @@ body {
   position: relative;
   top: -44px;
 }
-.mid-front {
+.mid-front-square {
   width: 160px;
   height: 160px;
 }
-.mid-front-square {
+.mid-front {
   margin: 0 auto;
   -webkit-perspective: 350px;
   perspective: 512px;
@@ -76,11 +76,11 @@ body {
   position: relative;
   top: -99px;
 }
-.front {
+.front-square {
   width: 206px;
   height: 206px;
 }
-.front-square {
+.front {
   margin: 0 auto;
   -webkit-perspective: 350px;
   perspective: 622px;
@@ -139,29 +139,29 @@ body {
   #app {
     margin-top: 15%;
   }
-  .back {
+  .back-square {
     width: 80px;
     height: 80px;
   }
-  .mid-back {
+  .mid-back-square {
     width: 96px;
     height: 96px;
   }
-  .mid-back-square {
+  .mid-back {
     top: -35px;
   }
-  .mid-front {
+  .mid-front-square {
     width: 114px;
     height: 114px;
   }
-  .mid-front-square {
+  .mid-front {
     top: -76px;
   }
-  .front {
+  .front-square {
     width: 135px;
     height: 135px;
   }
-  .front-square {
+  .front {
     top: -124px;
   }
 
@@ -186,29 +186,29 @@ body {
   #app {
     margin-top: 25%;
   }
-  .back {
+  .back-square {
     width: 61px;
     height: 61px;
   }
-  .mid-back {
+  .mid-back-square {
     width: 70px;
     height: 70px;
   }
-  .mid-back-square {
+  .mid-back {
     top: -27px;
   }
-  .mid-front {
+  .mid-front-square {
     width: 80px;
     height: 80px;
   }
-  .mid-front-square {
+  .mid-front {
     top: -57px;
   }
-  .front {
+  .front-square {
     width: 90px;
     height: 90px;
   }
-  .front-square {
+  .front {
     top: -90px;
   }
 
