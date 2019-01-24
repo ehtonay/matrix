@@ -1,0 +1,225 @@
+/*
+ * Desktop styling ( > 900px vw )
+ */
+
+/* Global */
+body {
+  background: radial-gradient(to bottom, #888 0%,#666 36%,#333 100%);
+  background-image: radial-gradient(to bottom, #666 0%,#666 36%,#111 100%);
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  min-width: 400px;
+}
+
+/* Components */
+#app {
+  margin-top: 10%;
+}
+#matrix-container {
+  transition: 3s ease-in-out;
+}
+.square {
+  background: rgba(0,0,0,0.7);
+  -webkit-transform: rotateX(50deg);
+  transform: rotateX(50deg);
+  display: inline-block;
+  margin-right: 1px;
+  opacity: 0.9;
+  position: relative;
+  top: -800px;
+  transition: top 2s ease;
+}
+.square:hover,
+.square a:hover {
+  opacity: 1;
+}
+.green-square {
+  background: linear-gradient(seagreen, lawngreen);
+}
+.purple-square {
+  background: linear-gradient(slateblue, orchid);
+}
+
+/* Rows */
+.back {
+  width: 100px;
+  height: 100px;
+}
+.back-square {
+  margin: 0 auto;
+  -webkit-perspective: 350px;
+  perspective: 350px;
+  text-align: center;
+}
+.mid-back {
+  width: 126px;
+  height: 126px;
+}
+.mid-back-square {
+  margin: 0 auto;
+  -webkit-perspective: 350px;
+  perspective: 425px;
+  text-align: center;
+  position: relative;
+  top: -44px;
+}
+.mid-front {
+  width: 160px;
+  height: 160px;
+}
+.mid-front-square {
+  margin: 0 auto;
+  -webkit-perspective: 350px;
+  perspective: 512px;
+  text-align: center;
+  position: relative;
+  top: -99px;
+}
+.front {
+  width: 206px;
+  height: 206px;
+}
+.front-square {
+  margin: 0 auto;
+  -webkit-perspective: 350px;
+  perspective: 622px;
+  text-align: center;
+  position: relative;
+  top: -168px;
+}
+
+/* Animation */
+@keyframes square {
+  from {
+    transform: rotateX(50deg) translateZ(0px);
+    box-shadow: 0px 0px 0 0 #666;
+  }
+  50% {
+    transform: rotateX(50deg) translateZ(20px);
+    box-shadow: 0px 2px 0 0 #666;
+  }
+  to {
+    transform: rotateX(50deg) translateZ(0px);
+    box-shadow: 0px 0px 0 0 #666;
+  }
+}
+.animation {
+  animation-name: square;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 2;
+  position: relative;
+}
+.ceiling {
+  transform: rotate3d(0, 0, 1, -200deg) translate(-40px, 160px);
+}
+.drop {
+  top: 0;
+}
+.level-out {
+  transform: rotate3d(1, 0, 0, 10deg);
+}
+.pull-back {
+  transform: rotate3d(1, 0, 1, -35deg);
+}
+.tip-right {
+  transform: rotate3d(0, 0, 1, 60deg) translate(0px, 80px);
+}
+
+
+/*
+ * Responsive styling
+ */
+
+@media only screen and (max-width: 900px) {
+
+  /* Components */
+  #app {
+    margin-top: 15%;
+  }
+  .back {
+    width: 80px;
+    height: 80px;
+  }
+  .mid-back {
+    width: 96px;
+    height: 96px;
+  }
+  .mid-back-square {
+    top: -35px;
+  }
+  .mid-front {
+    width: 114px;
+    height: 114px;
+  }
+  .mid-front-square {
+    top: -76px;
+  }
+  .front {
+    width: 135px;
+    height: 135px;
+  }
+  .front-square {
+    top: -124px;
+  }
+
+  /* Animations */
+  .ceiling {
+    transform: rotate3d(0, 0, 1, -200deg) translate(-30px, 100px);
+  }
+  .tip-right {
+    transform: rotate3d(0, 0, 1, 60deg) translate(0px, 80px);
+  }
+  .pull-back {
+    transform: rotate3d(1, 0, 1, -35deg);
+  }
+  .level-out {
+    transform: rotate3d(1, 0, 0, 60deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* Components */
+  #app {
+    margin-top: 25%;
+  }
+  .back {
+    width: 61px;
+    height: 61px;
+  }
+  .mid-back {
+    width: 70px;
+    height: 70px;
+  }
+  .mid-back-square {
+    top: -27px;
+  }
+  .mid-front {
+    width: 80px;
+    height: 80px;
+  }
+  .mid-front-square {
+    top: -57px;
+  }
+  .front {
+    width: 90px;
+    height: 90px;
+  }
+  .front-square {
+    top: -90px;
+  }
+
+  /* Animations */
+  .tip-right {
+    transform: rotate3d(0, 0, 1, 60deg) translate(-50px, 20px);
+  }
+  .pull-back {
+    transform: rotate3d(1, 0, 1, -35deg) translate(10px,-30px);
+  }
+  .level-out {
+    transform: rotate3d(1, 0, 0, 60deg);
+  }
+}
