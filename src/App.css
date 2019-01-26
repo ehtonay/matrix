@@ -12,7 +12,7 @@ body {
 
 /* Components */
 #app {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 #matrix-container {
   transition: 3s ease-in-out;

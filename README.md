@@ -7,6 +7,7 @@
 ### Installation
 From the command line:
 
-1) git clone https://github.com/ehtonay/matrix.git folder-name
-2) cd folder-name
-3) npm start
+1) `git clone https://github.com/ehtonay/matrix.git folder-name`
+2) `cd folder-name`
+3) `npm install`
+4) `npm start`
