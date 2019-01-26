@@ -4,9 +4,7 @@
 
 /* Global */
 body {
-  background: radial-gradient(to bottom, #888 0%,#666 36%,#333 100%);
-  background-image: radial-gradient(to bottom, #666 0%,#666 36%,#111 100%);
-  background-position: center;
+  background: radial-gradient(#666 0%,#555 50%,#333 90%); 
   height: 100vh;
   overflow: hidden;
   min-width: 400px;
