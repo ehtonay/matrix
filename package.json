@@ -1,6 +1,7 @@
 {
   "name": "react-square-matrix",
   "version": "1.0.0",
+  "homepage": "http://tonylaboratory.com/react-square-matrix",
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
