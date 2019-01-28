@@ -1,4 +1,4 @@
-# react-square-matrix (TEST)
+# react-square-matrix
 
 
 ### Description
